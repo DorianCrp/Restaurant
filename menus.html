@@ -9,14 +9,14 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/reservation.css">
+    <link rel="stylesheet" href="assets/css/menus.css">
 </head>
 
 <body>
     <header class="py-3" style="background-color: #011027;">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="index.html">
-                <img src="assets/img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px; height: auto;">
+                <img src="assets/img/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
             </a>
             <nav>
                 <ul class="nav">
@@ -24,289 +24,267 @@
                     <li class="nav-item"><a class="nav-link text-white" href="menus.html">Menus</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="reservation.html">Book a Table</a></li>
                 </ul>
-            </nav>          
+            </nav>
+        </div>
     </header>
-    <main style="margin-top: 30px;">
-        <section id="menus" class="py-5">
-            <div class="container d-flex justify-content-center">
-                <div class="col-sm-6">
-                    <h2 class="text-dark text-center fw-bold mb-4">Our Menus</h2>
-                    <h5 class="text-center">Starter + Main course + Desserts + Drink</h5>
+
+    <main class="container mt-5">
+        <!-- NAV TABS -->
+        <ul class="nav nav-tabs" id="menuTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#entree">Starters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#main_course">Main Course</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#desserts">Desserts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#drinks">Drinks</a>
+            </li>
+        </ul>
+
+        <!-- CONTENU DES TABS -->
+        <div class="tab-content mt-4">
+            <!-- Entrées -->
+            <div id="entree" class="tab-pane fade show active">
+                <h3 class="text-center">Starters</h3>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Japanese Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Japanese Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A fresh salad with seaweed, sesame, and a light soy-based dressing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Avocado and Salmon Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Avocado and Salmon Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A creamy mix of ripe avocado and fresh salmon, often with a citrus touch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Fisherman's Broth">
+                            <div class="card-body">
+                                <h5 class="card-title">Fisherman's Broth <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A flavorful seafood soup made with fish, shellfish, and aromatic herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Wild Boar Terrine">
+                            <div class="card-body">
+                                <h5 class="card-title">Wild Boar Terrine</h5>
+                                <p class="card-text">A rich and rustic pâté made from wild boar, often with spices and herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Lentil Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Lentil Soup</h5>
+                                <p class="card-text">A smooth and creamy soup made from lentils, sometimes with a hint of spices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Sweet Pea Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweet Pea Soup</h5>
+                                <p class="card-text">A delicate and creamy soup made from fresh sweet peas, often garnished with mint.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="text-dark fw-bold text-center mt-4">
-                <h3>Starters</h3>
+            <div id="main_course" class="tab-pane fade">
+                <h3 class="text-center">Main Course</h3>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Japanese Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Japanese Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A fresh salad with seaweed, sesame, and a light soy-based dressing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Avocado and Salmon Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Avocado and Salmon Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A creamy mix of ripe avocado and fresh salmon, often with a citrus touch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Fisherman's Broth">
+                            <div class="card-body">
+                                <h5 class="card-title">Fisherman's Broth <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A flavorful seafood soup made with fish, shellfish, and aromatic herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Wild Boar Terrine">
+                            <div class="card-body">
+                                <h5 class="card-title">Wild Boar Terrine</h5>
+                                <p class="card-text">A rich and rustic pâté made from wild boar, often with spices and herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Lentil Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Lentil Soup</h5>
+                                <p class="card-text">A smooth and creamy soup made from lentils, sometimes with a hint of spices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Sweet Pea Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweet Pea Soup</h5>
+                                <p class="card-text">A delicate and creamy soup made from fresh sweet peas, often garnished with mint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <section id="entree" class="row mt-4">
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Magret de Canard">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">
-                                Japanese Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span>
-                            </h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A fresh salad with
-                                seaweed, sesame, and a light soy-based dressing.</p>
+            <div id="desserts" class="tab-pane fade">
+                <h3 class="text-center">Desserts</h3>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Japanese Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Japanese Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A fresh salad with seaweed, sesame, and a light soy-based dressing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Avocado and Salmon Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Avocado and Salmon Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A creamy mix of ripe avocado and fresh salmon, often with a citrus touch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Fisherman's Broth">
+                            <div class="card-body">
+                                <h5 class="card-title">Fisherman's Broth <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A flavorful seafood soup made with fish, shellfish, and aromatic herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Wild Boar Terrine">
+                            <div class="card-body">
+                                <h5 class="card-title">Wild Boar Terrine</h5>
+                                <p class="card-text">A rich and rustic pâté made from wild boar, often with spices and herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Lentil Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Lentil Soup</h5>
+                                <p class="card-text">A smooth and creamy soup made from lentils, sometimes with a hint of spices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Sweet Pea Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweet Pea Soup</h5>
+                                <p class="card-text">A delicate and creamy soup made from fresh sweet peas, often garnished with mint.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Tartar au Saumon">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Avocado and Salmon
-                                Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A creamy mix of ripe
-                                avocado and fresh salmon, often with a citrus touch.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Fisherman's Broth <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A flavorful seafood soup
-                                made with fish, shellfish, and aromatic herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Wild Boar Terrine</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A rich and rustic pâté
-                                made from wild boar, often with spices and herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Lentil Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A smooth and creamy soup
-                                made from lentils, sometimes with a hint of spices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Sweet Pea Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A delicate and creamy
-                                soup made from fresh sweet peas, often garnished with mint.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="text-dark fw-bold text-center">
-                <h3>Main Course</h3>
             </div>
-            <section id="main_course" class="row mt-4">
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Magret de Canard">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">
-                                Japanese Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span>
-                            </h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A fresh salad with
-                                seaweed, sesame, and a light soy-based dressing.</p>
+            <div id="drinks" class="tab-pane fade">
+                <h3 class="text-center">Drinks</h3>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Japanese Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Japanese Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A fresh salad with seaweed, sesame, and a light soy-based dressing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Avocado and Salmon Salad">
+                            <div class="card-body">
+                                <h5 class="card-title">Avocado and Salmon Salad <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A creamy mix of ripe avocado and fresh salmon, often with a citrus touch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Fisherman's Broth">
+                            <div class="card-body">
+                                <h5 class="card-title">Fisherman's Broth <span style="color: red; font-size: 1rem;">(Popular)</span></h5>
+                                <p class="card-text">A flavorful seafood soup made with fish, shellfish, and aromatic herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Wild Boar Terrine">
+                            <div class="card-body">
+                                <h5 class="card-title">Wild Boar Terrine</h5>
+                                <p class="card-text">A rich and rustic pâté made from wild boar, often with spices and herbs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Lentil Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Lentil Soup</h5>
+                                <p class="card-text">A smooth and creamy soup made from lentils, sometimes with a hint of spices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow-lg rounded overflow-hidden mb-5">
+                            <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Sweet Pea Soup">
+                            <div class="card-body">
+                                <h5 class="card-title">Sweet Pea Soup</h5>
+                                <p class="card-text">A delicate and creamy soup made from fresh sweet peas, often garnished with mint.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Tartar au Saumon">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Avocado and Salmon
-                                Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A creamy mix of ripe
-                                avocado and fresh salmon, often with a citrus touch.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Fisherman's Broth <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A flavorful seafood soup
-                                made with fish, shellfish, and aromatic herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Wild Boar Terrine</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A rich and rustic pâté
-                                made from wild boar, often with spices and herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Lentil Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A smooth and creamy soup
-                                made from lentils, sometimes with a hint of spices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Sweet Pea Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A delicate and creamy
-                                soup made from fresh sweet peas, often garnished with mint.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="text-dark fw-bold text-center">
-                <h3>Desserts</h3>
             </div>
-            <section id="desserts" class="row mt-4">
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Magret de Canard">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">
-                                Japanese Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span>
-                            </h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A fresh salad with
-                                seaweed, sesame, and a light soy-based dressing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Tartar au Saumon">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Avocado and Salmon
-                                Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A creamy mix of ripe
-                                avocado and fresh salmon, often with a citrus touch.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Fisherman's Broth <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A flavorful seafood soup
-                                made with fish, shellfish, and aromatic herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Wild Boar Terrine</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A rich and rustic pâté
-                                made from wild boar, often with spices and herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Lentil Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A smooth and creamy soup
-                                made from lentils, sometimes with a hint of spices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Sweet Pea Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A delicate and creamy
-                                soup made from fresh sweet peas, often garnished with mint.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="text-dark fw-bold text-center">
-                <h3>Drinks</h3>
-            </div>
-            <section id="drinks" class="row mt-4">
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_japonaise.jpg" class="card-img-top" alt="Magret de Canard">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">
-                                Japanese Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span>
-                            </h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A fresh salad with
-                                seaweed, sesame, and a light soy-based dressing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/salade_davocat_au_saumon.jpeg" class="card-img-top" alt="Tartar au Saumon">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Avocado and Salmon
-                                Salad <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A creamy mix of ripe
-                                avocado and fresh salmon, often with a citrus touch.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/bouillon_du_pecheur.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Fisherman's Broth <span style="color: red; font-size: 0.75rem;">(Popular)</span></h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A flavorful seafood soup
-                                made with fish, shellfish, and aromatic herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/terrine_de_sanglier.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Wild Boar Terrine</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A rich and rustic pâté
-                                made from wild boar, often with spices and herbs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_lentilles.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Lentil Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A smooth and creamy soup
-                                made from lentils, sometimes with a hint of spices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2">
-                    <div class="card shadow-lg rounded overflow-hidden mb-5">
-                        <img src="assets/img/veloute_de_petits_pois.jpg" class="card-img-top" alt="Carpaccio de Boeuf">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 0.85rem; font-weight: bold;">Sweet Pea Velouté</h5>
-                            <p class="card-text" style="font-size: 0.70rem; line-height: 1.2;">A delicate and creamy
-                                soup made from fresh sweet peas, often garnished with mint.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
+        </div>
     </main>
     <footer class="text-center text-white py-4" style="background-color: #0A94A6;">
         <div class="container">
